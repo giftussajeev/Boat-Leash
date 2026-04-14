@@ -11,4 +11,5 @@ Other tweaks cover edge cases. Leash breaks at set limits. Strength scales with 
 
 Requires
 Fabric Minecraft 1.16.5
-Dependencies Fabric-api, Cloth-api, Mod Menu (optional)
+
+Current Dependencies Fabric-api, Cloth-api, Mod Menu (optional)
