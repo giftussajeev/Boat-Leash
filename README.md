@@ -12,7 +12,7 @@
 - **Accurate Physics**: Beautifully coded momentum and pulling mechanics so your boats (and their passengers) naturally follow you or your primary vessel.
 - **Accurate Visuals**: Fully implements the classic, sagging catenary 3D leash ribbon that correctly attaches from your hand to the boat. 
 - **Mob Transport**: Easily pull boats containing mobs, animals, and villagers without breaking a sweat.
-- **Zero Dependencies**: Completely standalone! **NO** Fabric API, Cloth Config, or ModMenu required. It runs instantly on any base Fabric installation.
+- **Zero Incompatabilities**: Completely compatable! **Works** with almost any mod pack. It runs instantly on any Fabric installation. (Modern preferred)
 - **Data Persistence**: Perfect NBT saving ensures leashes survive logouts, server restarts, and chunk unloads.
 - **Java 8 Native**: Backported with maximum compatibility. Works flawlessly on older Java 8 environments alongside other legacy mods without crashing.
 - **Vanilla Drops**: Breaking a leashed boat or unleashing it correctly drops your Lead back into the world.
