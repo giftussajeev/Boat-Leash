@@ -2,6 +2,7 @@ package com.boatleash.mixin;
 
 import com.boatleash.config.ModConfig;
 import com.boatleash.leash.BoatLeashAccess;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.decoration.LeashKnotEntity;
@@ -22,22 +23,23 @@ public class LeadItemMixin {
 
     @Inject(method = "useOnBlock", at = @At("HEAD"), cancellable = true)
     private void boatLeash$useOnFence(ItemUsageContext context, CallbackInfoReturnable<ActionResult> cir) {
-        if (!ModConfig.enabled) {
-            return;
-        }
+        if (!ModConfig.enabled) return;
 
         World world = context.getWorld();
         BlockPos pos = context.getBlockPos();
         PlayerEntity player = context.getPlayer();
 
-        if (player == null || !(world.getBlockState(pos).getBlock() instanceof FenceBlock)) {
-            return;
-        }
+        if (player == null) return;
+
+        BlockState state = world.getBlockState(pos);
+        if (!(state.getBlock() instanceof FenceBlock)) return;
 
         LeashKnotEntity knot = LeashKnotEntity.getOrCreate(world, pos);
+
         boolean attached = false;
 
-        for (Entity entity : world.getOtherEntities(player, player.getBoundingBox().expand(12.0D))) {
+        for (Entity entity : world.getOtherEntities(player, player.getBoundingBox().expand(10.0D))) {
+
             if (entity instanceof BoatEntity && entity instanceof BoatLeashAccess) {
                 BoatLeashAccess access = (BoatLeashAccess) entity;
                 if (access.boatLeash$getHolder() == player) {

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "boatleash",
-  "version": "1.4",
+  "version": "1.5",
   "name": "Boat Leash",
   "description": "Leash boats in 1.16.5. No extra mods required.",
   "authors": [],

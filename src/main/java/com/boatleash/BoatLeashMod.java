@@ -1,5 +1,6 @@
 package com.boatleash;
 
+import com.boatleash.config.ModConfig;
 import net.fabricmc.api.ModInitializer;
 
 public class BoatLeashMod implements ModInitializer {
@@ -8,6 +9,7 @@ public class BoatLeashMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ModConfig.load();
         System.out.println("Boat Leash Mod Loaded");
     }
 }

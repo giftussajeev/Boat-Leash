@@ -4,7 +4,12 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "BoatEntityMixin",
-    "LeadItemMixin"
+    "LeadItemMixin",
+    "EntityMixin"
+  ],
+  "client": [
+    "client.BoatEntityRendererMixin",
+    "client.ClientNetworkHandlerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

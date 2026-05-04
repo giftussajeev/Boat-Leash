@@ -20,7 +20,7 @@ public class ModConfig {
 
     public static boolean enabled = true;
     public static double maxDistance = 30.0;
-    public static double pullForce = 0.4;
+    public static double pullForce = 0.5;
     public static double breakDistance = 45.0;
 
     public static void load() {
@@ -68,7 +68,7 @@ public class ModConfig {
     private static class Data {
         boolean enabled = true;
         double maxDistance = 30.0;
-        double pullForce = 0.4;
+        double pullForce = 0.5;
         double breakDistance = 45.0;
     }
 }
