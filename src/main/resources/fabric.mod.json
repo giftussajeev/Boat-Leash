@@ -1,26 +1,25 @@
 {
   "schemaVersion": 1,
   "id": "boatleash",
-  "version": "1.0.0",
+  "version": "1.4",
   "name": "Boat Leash",
-  "description": "Leash boats with smooth, server-side physics Testing w/ Modmenu and cloth integration.",
+  "description": "Leash boats in 1.16.5. No extra mods required.",
+  "authors": [],
   "environment": "*",
   "entrypoints": {
     "main": [
       "com.boatleash.BoatLeashMod"
     ],
-    "modmenu": [
-      "com.boatleash.config.ModMenuIntegration"
+    "client": [
+      "com.boatleash.BoatLeashClient"
     ]
   },
+  "icon": "assets/boatleash/icon.png",
   "mixins": [
     "boatleash.mixins.json"
   ],
   "depends": {
     "minecraft": "1.16.5",
-    "fabricloader": ">=0.14.0",
-    "fabric-api": "*",
-    "modmenu": "*",
-    "cloth-config2": "*"
+    "fabricloader": ">=0.14.0"
   }
 }
