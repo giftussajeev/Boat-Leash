@@ -1,4 +1,4 @@
-# 🛶 Boat Leash for Fabric 1.16.5
+#  **Boat Leash for Fabric 1.16.5**
 
 ![Boat Leash Showcase](readmeimage.jpg)
 
