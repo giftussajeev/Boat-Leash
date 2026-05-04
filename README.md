@@ -22,7 +22,7 @@
 1. Make sure you have the [Fabric Loader](https://fabricmc.net/use/) installed for Minecraft 1.16.5.
 2. Download the latest `boat-leash-1.5.jar` from the [Releases page](../../releases).
 3. Drop the `.jar` file directly into your `.minecraft/mods` folder.
-4. Launch the game and enjoy! (No extra API mods needed!)
+4. Launch the game and enjoy! (No Fabric API and Mod Menu recommended!)
 
 ## 🎮 How to Use
 
